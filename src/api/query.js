@@ -1,4 +1,5 @@
 import { getOptions } from "../install";
+import isEnabled from "./is-enabled";
 
 export default function (...args) {
   const { globalObjectName } = getOptions();
@@ -7,5 +8,5 @@ export default function (...args) {
     return;
   }
 
-  window[globalObjectName](...args);
+  if (isEnabled()) window[globalObjectName](...args);
 }

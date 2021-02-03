@@ -12,6 +12,7 @@ import refund from "./refund";
 import set from "./set";
 import optIn from "./opt-in";
 import optOut from "./opt-out";
+import isEnabled from "./is-enabled";
 
 export default {
   query,
@@ -28,4 +29,5 @@ export default {
   set,
   optIn,
   optOut,
+  isEnabled,
 };
